@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    background-color: #171717;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* navigation section */
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #171717;
+}
+
+.flex {
+    display: flex;
+}
+.navigation .menu {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.navigation .menu button {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    border: none;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+}
+
+.logo{
+    width: 90px;
+    height: 20px;
+    padding: 18px 14px 18px 16px;  
+}
+.logo svg{
+    fill: #fff;
+}
+
+
+.search-bar {
+    position: relative;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+.search-bar input {
+    padding: 10px;
+    width: 500px;
+    background: #000;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.search-bar button{
+    position: absolute;
+    border: none;
+    background-color: #535050;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.mic {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 5px;
+}
+.mic button {
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: black;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.far-right {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.far-right .icons {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+.far-right .icons button{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+
+.far-right .bell{
+    position: relative;
+}
+.far-right .icons button span{
+  position: absolute;
+  line-height: 5px;
+  font-size: 15px;
+  margin-right: 40px;
+  background-color: red;
+  padding: 4px;
+  border-radius: 20px;
+  color: #fff;
+  left: 30px;
+}
+.far-right .icon-menu{
+  width: 30px;
+}
+
+.far-right .icon-menu button svg{
+    fill: #fff;
+}
+
+.profile {
+    margin-top: 8px;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+}
+
+
+/* video section */ 
+
+.video-section {
+    width: 100vw;
+    height: 90vh;
+    background-color: #171717;
+    justify-content: center;
+    text-align: center;
+}
+.video-section .video-container iframe{
+    margin-top: 70px;
+    width: 80vw;
+    height: 80vh;
+}
+
+/* main */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.main .left-bar {
+    max-width: 70vw;
+}
+.main .left-bar .title {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.main .left-bar .title .bbfo {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.main .left-bar .title .bbfo .viewers span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8b8a8a;
+}
+
+.main .left-bar .title .bbfo .reactors button {
+    border: none;
+    padding: 6px;
+    height: 36px;
+    width: 36px;
+    background-color: inherit;
+}
+
+.main .left-bar .title .bbfo .reactors button i {
+    height: 24px;
+    width: 24px;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+.left-bar .description-section {
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.left-bar .description-section .title-description {
+    display: flex;
+    justify-content: space-between;
+}
+.left-bar .description-section .title-description .title-name{
+    display: flex;
+}
+.left-bar .description-section .title-name{
+    display: flex; 
+    margin-bottom: 20px;
+}
+
+.left-bar .description-section .title-name img{
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+
+}
+
+.left-bar .description-section .info {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.left-bar .description-section .subscribe  button {
+    background-color: inherit;
+    color: #fff;
+    border: none;
+}
+
+.left-bar .description-section .subscribe .sub button {
+    margin-right: 10px;
+    font-size: 15px;
+    background-color: #535050;
+    padding: 10px;
+}
+
+.left-bar .description-section .subscribe .bell button {
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+
+
+/* comments */
+.comment-section .comment-title {
+    margin-bottom: 40px;
+}
+.comment-section .comment-title .rC{
+    margin-bottom: 20px;
+
+}
+
+.comment-section .comment-title .rC span{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.comment-section .comment-title .toC{
+    display: flex;
+}
+.comment-section .comment-title .toC img{
+   height: 44px;
+   width: 44px;
+   border-radius: 50%;
+}
+
+.comment-section .comment-title .toC input{
+    margin-left: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    width: 90%;
+    background-color: #171717;
+    outline: none;
+    font-size: 16px;
+}
+
+.comments .commentors {
+    display: flex;
+    padding: 20px;
+}
+
+.comments .commentors .profile-cm img {
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+}
+.comments .commentors .comment-container div {
+    margin-bottom: 10px;
+}
+.comments .commentors .comment-container span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8b8a8a;
+
+}
+
+.comments .commentors .comment-container span button{
+    background-color: inherit;
+    color: #fff;
+    border: none;
+}
+
+
+.right-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bar .top-btn {
+    display: flex;
+    margin: 20px;
+}
+
+
+
+.right-bar .top-btn .links button {
+    border-radius: 16px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    border: none;
+    color: #fff;
+    background-color: inherit;
+}
+.right-bar .top-btn .links button {
+    background-color: #535050;
+    padding: 10px;
+}
+
+
+.right-bar .top-btn .active button {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+}
+
+.right-bar .side-video-section .videos-recom{
+    display: flex;
+    margin: 20px;
+}
+
+.right-bar .side-video-section img {
+    width: 150px;
+    height: 100px;
+}
+
+.right-bar .side-video-section .videos-recom .video-info p{
+    font-size: 12px;
+    font-weight: 400px;
+}
+
+.right-bar .side-video-section .videos-recom .video-info .vid-titles{
+    font-size: 17px;
+    font-weight: 600;
+}
