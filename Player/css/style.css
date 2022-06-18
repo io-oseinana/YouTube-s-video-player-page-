@@ -7,8 +7,53 @@ body {
     color: #fff;
     background-color: #171717;
     font-family: Roboto, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
+/* styling siderbar */
+
+.sidebar {
+    background-color: #171717;
+    width: 160px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.sidebar .sidebar-tab {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #535050;
+}
+
+.sidebar .sidebar-tab  .tab-items{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.sidebar .sidebar-tab .tab-items i {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.sidebar .sidebar-tab .tab-items i svg {
+    fill: #fff;
+    max-width: 30px;
+}
+
+.sidebar-tab .tab-items .text {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sidebar-tab .tab-items .show-more {
+    display: none;
+}
 /* navigation section */
 
 .navigation{
@@ -374,3 +419,26 @@ body {
     font-size: 17px;
     font-weight: 600;
 }
+
+/* custom scrollbar */
+
+/* width */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #171717;
+    border-radius: 6px;
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
